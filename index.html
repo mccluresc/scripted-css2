@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ScriptEd CSS Lesson</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="scripted.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Do Now: Reproduce this page</h2>
+					<p>Load JSBin and reproduce this page as closely as you can!</p>
+					<img src="donow.png"/>
+				</section>
+				<section>
+					<section data-transition="fade-out">
+						<h2>My Justin Beiber Fan Page</h2>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: blue; color:white; border:0.1em solid blue; text-align: left;">
+							&lt;html&gt;
+							<div style="color: blue; margin:0.25em 1em;border:0.1em solid blue; ">
+								&lt;head&gt;
+								<div style="margin:0.25em 1em;border:0.1em solid blue; ">
+									&lt;style&gt;
+									<div>
+body { background-color:pink; }<br/>
+h1 { color:purple; }<br/>
+#reasonOne { color:blue; }<br/>
+#reasonTwo { color:red; }<br/>
+#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: blue; margin:0.25em 1em;border:0.1em solid blue; ">
+								&lt;body&gt;
+								<div style="margin:0.25em 1em;border:0.1em solid blue; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;<br/>
+									&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;<br/>
+									&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;<br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+body { background-color:pink; }<br/>
+h1 { color:purple; }<br/>
+#reasonOne { color:blue; }<br/>
+#reasonTwo { color:red; }<br/>
+#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="background-color: red; color: white; margin:0.25em 1em;border:0.1em solid red; ">
+								&lt;body&gt;
+								<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: red; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: red; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;<br/>
+									&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;<br/>
+									&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;<br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+body { background-color:pink; }<br/>
+h1 { color:purple; }<br/>
+#reasonOne { color:blue; }<br/>
+#reasonTwo { color:red; }<br/>
+#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="background-color: white; color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; background-color:orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; background-color:purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue; background-color: darkblue; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+body { background-color:pink; }<br/>
+h1 { color:purple; }<br/>
+#reasonOne { color:blue; }<br/>
+#reasonTwo { color:red; }<br/>
+#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; background-color:purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue; background-color: darkblue; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+body { background-color:pink; }<br/>
+h1 { color:purple; }<br/>
+#reasonOne { color:blue; }<br/>
+#reasonTwo { color:red; }<br/>
+#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue; background-color: darkblue; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown; background-color:brown; border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; background-color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; background-color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li <span style="background-color:brown;">id="reasonOne"</span>&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li <span style="background-color:brown;">id="reasonTwo"</span>&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li <span style="background-color:brown;">id="reasonThree"</span>&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style="background-color: green; color: white; margin:0.25em 1em;border:0.1em solid green; ">
+								&lt;head&gt;
+								<div style="color: green; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: white ;background-color:darkorange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div style="color:darkorange;">
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: darkorange ; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			<span style="background-color:darkorange;color:darkorange;">h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/></span>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: darkorange ; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			<span style="background-color:darkorange;color:darkorange;">#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/></span>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: darkorange ; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			<span style="background-color:darkorange;color:darkorange;">#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/></span>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: darkorange ; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			<span style="background-color:darkorange;color:darkorange;">#reasonThree { font-style:italic; }<br/></span>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+					<section data-transition="fade-out fade-in">
+
+						<div style="font-size:24px; background-color: white; color:blue; border:0.1em solid; text-align: left;">
+							&lt;html&gt;
+							<div style=" color: green; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;head&gt;
+								<div style="color: darkorange ; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;style&gt;
+									<div>
+			body { background-color:pink; }<br/>
+			h1 { color:purple; }<br/>
+			#reasonOne { color:blue; }<br/>
+			#reasonTwo { color:red; }<br/>
+			#reasonThree { font-style:italic; }<br/></span>
+									</div>
+									&lt;style&gt;
+								</div>
+								&lt;/head&gt;
+							</div>
+							<div style="color: red; margin:0.25em 1em;border:0.1em solid; ">
+								&lt;body&gt;
+								<div style="color: orange; margin:0.25em 1em;border:0.1em solid; ">
+									&lt;h1&gt;Reasons Justin Beiber is Awesome!&lt;/h1&gt;
+								</div>
+								<div style="color: purple; margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;p&gt;Here are the reasons I think Justin is the best singer on the planet:&lt;/p&gt;
+								</div>
+								<div style="color: darkblue;  margin:0.25em 1em;border:solid 0.1em; ">
+									&lt;ul&gt;
+									<div style="margin:0.25em 1em; ">
+									<span style="color:brown;  border:solid 0.1em">&lt;li id="reasonOne"&gt;He sang Boyfriend, the best song ever&lt;/li&gt;</span><br/>
+									<span style=" color:brown; border:solid 0.1em">&lt;li id="reasonTwo"&gt;He looked good before he dyed his hair&lt;/li&gt;</span><br/>
+									<span style="color:brown; border:solid 0.1em">&lt;li id="reasonThree"&gt;He never makes any mistakes&lt;/li&gt;</span><br/>
+									</div>
+									&lt;ul&gt;
+								</div>
+								&lt;/body&gt;
+							</div>
+							&lt;/html&gt;
+						</div>
+					</section>
+				</section>
+				<section>
+					<section data-transition="fade-out">
+						<h2>Review: Parts of a Tag</h2>
+						<br/>
+						<br/>
+						<table style="padding: 0; margin: 0; border:0;">
+							<tr style="padding: 0; margin: 0; border:0;">
+								<td style="padding: 0; margin: 0; border:0;">&lt;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&nbsp;&nbsp;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="padding: 0; margin: 0; border:0;">="</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="padding: 0; margin: 0; border:0;">"</td>
+								<td style="padding: 0; margin: 0; border:0;">&gt;</td>
+							</tr>
+						</table>
+					</section>
+					<section data-transition="fade-in fade-out">
+						<h2>Review: Parts of a Tag</h2>
+						<br/>
+						<br/>
+						<table style="padding: 0; margin: 0; border:0;">
+							<tr style="padding: 0; margin: 0; border:0;">
+								<td style="padding: 0; margin: 0; border:0;">&lt;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&nbsp;&nbsp;</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="padding: 0; margin: 0; border:0;">="</td>
+								<td style="color: grey; padding: 0; margin: 0; border:0;">&#9608;&#9608;&#9608;&#9608;</td>
+								<td style="padding: 0; margin: 0; border:0;">"</td>
+								<td style="padding: 0; margin: 0; border:0;">&gt;</td>
+							</tr>
+							<tr>
+								<td style="padding: 0; margin: 0; border:0;"></td>
+								<td style="text-align: center; font-style:italic; padding: 0; margin: 0; border:0;">name</td>
+								<td style="padding: 0; margin: 0; border:0;"></td>
+								<td style="font-style:italic; padding: 0; margin: 0; border:0;">attribute</td>
+								<td style="padding: 0; margin: 0; border:0;"></td>
+								<td style="font-style:italic; padding: 0; margin: 0; border:0;">value</td>
+								<td style="padding: 0; margin: 0; border:0;"></td>
+								<td style="padding: 0; margin: 0; border:0;"></td>
+							</tr>
+						</table>
+					</section>
+					<section data-transition="fade-in fade-out">
+						<h2>Review: Parts of a Tag</h2>
+						<br/>
+						<br/>
+						<table style="padding: 0; margin: 0; border:0;">
+							<tr style="padding: 0; margin: 0; border:0;">
+								<td style="padding: 0; margin: 0; border:0;">&lt;</td>
+								<td style="padding: 0; margin: 0; border:0;">img</td>
+								<td style="padding: 0; margin: 0; border:0;">&nbsp;&nbsp;</td>
+								<td style="padding: 0; margin: 0; border:0;">src</td>
+								<td style="padding: 0; margin: 0; border:0;">="</td>
+								<td style="padding: 0; margin: 0; border:0;">cutebunny.gif</td>
+								<td style="padding: 0; margin: 0; border:0;">"</td>
+								<td style="padding: 0; margin: 0; border:0;">&gt;</td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>
+<section data-transition="fade-out">
+	<h2>Review: Parts of a CSS Rule</h2>
+	<p>
+			<br/>
+	<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span> {<br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span>=<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span><br/><br/>
+	}
+	</p>
+
+</section>
+<section data-transition="fade-in">
+	<h2>Review: Parts of a CSS Rule</h2>
+	<p>
+	<i>selector</i><br/>
+	<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span> {<br/><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span>=<span style="color:grey">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</span><br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;<i>property</i>&nbsp;&nbsp;&nbsp;&nbsp;<i>value</i><br/>
+	}
+	</p>
+</section>
+
+</section>
+<section>
+	<h2>Review: Selectors</h2>
+	<ul>
+	<li>Define <b>what</b> you want to style.</li>
+	<li>Select a single ID:
+<pre>#myPicture {
+  height: 200;
+  width: 100;
+}</pre></li>
+<li>Select a class:
+<pre>.friendPictures {
+height: 150;
+width: 75;
+}</pre></li>
+	<li>Select all of a single type of tags:
+<pre>p {
+   color: red;
+}</pre></li>
+	</ul>
+</section>
+<section>
+	<h2>Properties</h2>
+	<p>Define <b>how</b> you want to style.</p>
+	<p>Common properties:</p>
+	<ul>
+	<li>color</li>
+	<li>background-color</li>
+	<li>height</li>
+	<li>width</li>
+	<li>font-size</li>
+	</ul>
+</section>
+<section>
+	<h2>Your turn!</h2>
+	<p>Go to this URL: http://bit.ly/tywls-css-example</p>
+	<p>Try:</p>
+	<ul>
+		<li>Changing colors</li>
+		<li>Adding properties</li>
+		<li>Adding rules</li>
+		<li>Adding id attributes</li>
+	</ul>
+	<p> Want to learn advanced selectors?</p>
+	<p>Go to: http://bit.ly/selector-game</p>
+</section>
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
